@@ -23,7 +23,3 @@ This tool is intended for educational and penetration testing purposes only.
 
 **Flow Diagram:**
    [ Victim ]  <--->  [ Attacker (You) ]  <--->  [ Gateway / Router ]
-        |                     |                           |
-        |---------------------|---------------------------|
-                 Fake ARP replies make attacker 
-                 appear as both victim & gateway
