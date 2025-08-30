@@ -6,7 +6,7 @@ This tool is intended for educational and penetration testing purposes only.
 
 **⚡ Features:**
 - ARP spoofing to intercept traffic between victim and gateway.
-- Enables and disables **IP forwarding** automatically.
+- Enables and disables IP forwarding automatically.
 - Restores original ARP tables after exit (safe cleanup).
 - Displays packet count while spoofing is active.
 - Lightweight and easy to use.
@@ -20,3 +20,10 @@ This tool is intended for educational and penetration testing purposes only.
 
 **🚀 Usage:**
 **sudo python3 mitm-script.py <victim_ip> <gateway_ip>**
+
+**Flow Diagram:**
+   [ Victim ]  <--->  [ Attacker (You) ]  <--->  [ Gateway / Router ]
+        |                     |                           |
+        |---------------------|---------------------------|
+                 Fake ARP replies make attacker 
+                 appear as both victim & gateway
